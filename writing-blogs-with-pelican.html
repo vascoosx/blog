@@ -36,11 +36,16 @@
         </address>
 <p>In <a href="http://vascoosx.github.io/blog/category/it.html">IT</a>. </p>
 
-</footer><!-- /.post-info -->      <p>generate content    pelican -s pelicanconf.py -o output content
-process an article  pelican -s pelicanconf.py -o output content
-change category     mv file into directory mapped to the category
-generate content with make  make html
-serve content   make serve</p>
+</footer><!-- /.post-info -->      <p>Write a blog in a file and save it into directory content.
+Next run this command, which will generate files into directory "output".</p>
+<div class="highlight"><pre><span class="n">pelican</span> <span class="o">-</span><span class="n">s</span> <span class="n">pelicanconf</span><span class="p">.</span><span class="n">py</span> <span class="o">-</span><span class="n">o</span> <span class="n">output</span> <span class="n">content</span>
+</pre></div>
+
+
+<p>You can write your blog in different categories. To do so, move file into directory mapped to the category inside directory "content".</p>
+<p>To push your blog to github,</p>
+<div class="highlight"><pre><span class="n">make</span> <span class="n">html</span> <span class="o">&amp;&amp;</span> <span class="n">ghp</span><span class="o">-</span><span class="n">import</span> <span class="n">output</span> <span class="o">&amp;&amp;</span> <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
+</pre></div>
     </div><!-- /.entry-content -->
 
   </article>
