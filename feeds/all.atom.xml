@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Eureka!</title><link href="http://vascoosx.github.io/blog/" rel="alternate"></link><link href="http://vascoosx.github.io/blog/feeds/all.atom.xml" rel="self"></link><id>http://vascoosx.github.io/blog/</id><updated>2014-03-11T00:00:00+09:00</updated><entry><title>First steps to start exploring face tracking technology</title><link href="http://vascoosx.github.io/blog/first-steps-to-start-exploring-face-tracking-technology.html" rel="alternate"></link><updated>2014-03-11T00:00:00+09:00</updated><author><name>Shunichi Vasco Otsuka</name></author><id>tag:vascoosx.github.io/blog,2014-03-11:first-steps-to-start-exploring-face-tracking-technology.html</id><summary type="html">&lt;p&gt;If you have been interested in computer vision and face tracking in particular checkout FaceTracker and clmtrackr. Also there are some awesome opensource projects that are very fun(FaceSubstitution, FaceSubstitutionEditor).&lt;/p&gt;
 &lt;p&gt;So to get you started, what might be better than to test it in your own computerand start hacking in a few minutes!&lt;/p&gt;
-&lt;p&gt;What you need:
-&lt;em&gt; Git
-&lt;/em&gt; brew
-* openframeworks&lt;/p&gt;
+&lt;p&gt;What you need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Git&lt;/li&gt;
+&lt;li&gt;Homebrew&lt;/li&gt;
+&lt;li&gt;openframeworks&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;By the way I will be explaining how to install on a Mac OSX, sorry other users.&lt;/p&gt;
 &lt;p&gt;First let's download openframeworks. &lt;/p&gt;
-&lt;p&gt;While downloading OF let's also get two special addons:
-&lt;em&gt; ofxfacetracker
-&lt;/em&gt; ofxCv&lt;/p&gt;
+&lt;p&gt;While downloading OF let's also get two special addons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ofxfacetracker&lt;/li&gt;
+&lt;li&gt;ofxCv&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Ofxfacetracker can be cloned with git and used right away. &lt;em&gt;However&lt;/em&gt; ofxCv is special. Kyle McDonald author of ofxCv is in the middle of a major remake so the master branch has changed so much that it won't work if you clone it. In order touse it download the &lt;em&gt;zip&lt;/em&gt; file from github. Also you will need to rename the expanded zip. It will be named ofxCv-master but I think you have to rename it ofxCv. 
   mv ofxCv-master ofxCv&lt;/p&gt;
 &lt;p&gt;OK, once OF has finished downloading, extract it and place it to the place of your choice. Let's say you have put it in /my/path/to/of. You will now need to move your addons to /my/path/to/of/addons. Just&lt;/p&gt;
